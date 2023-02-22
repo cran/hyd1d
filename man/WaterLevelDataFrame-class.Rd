@@ -3,15 +3,15 @@
 \docType{class}
 \name{WaterLevelDataFrame-class}
 \alias{WaterLevelDataFrame-class}
-\title{S4 class for 1D water level data}
+\title{S4 class for 1d water level data}
 \description{
 The S4 class \linkS4class{WaterLevelDataFrame} is inherited from
-  the S3 class \code{\link[base]{data.frame}} and stores 1D water level
+  the S3 class \code{\link[base]{data.frame}} and stores 1d water level
   information together with the official stationing along the German federal
   waterways Elbe and Rhine.
 }
 \details{
-In addition to the 1D water level data stored in the 
+In addition to the 1d water level data stored in the 
   \code{\link[base]{data.frame}} further slots contain necessary information
   used for or computed during the computation of water levels:
 }

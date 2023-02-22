@@ -3,7 +3,7 @@
 \name{waterLevelFlys3}
 \alias{waterLevelFlys3}
 \alias{waterLevelFlys3Seq}
-\title{Obtain 1D water level data from the FLYS3 database}
+\title{Obtain 1d water level data from the FLYS3 database}
 \usage{
 waterLevelFlys3(wldf, name)
 
@@ -36,7 +36,7 @@ Details.}
 An object of class \linkS4class{WaterLevelDataFrame}.
 }
 \description{
-Obtain 1D water level data from the
+Obtain 1d water level data from the
   \href{https://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html}{FLYS3}
   database using either 
   a predefined \linkS4class{WaterLevelDataFrame} or \code{river}, \code{from} 

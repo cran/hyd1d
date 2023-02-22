@@ -98,7 +98,7 @@ and maximum allowed values of \code{w} are river-specific: Elbe (m a.s.l. 0
 }
 \value{
 The function produces an object of class
-  \linkS4class{WaterLevelDataFrame} which might contain 1D water level data
+  \linkS4class{WaterLevelDataFrame} which might contain 1d water level data
   and information to recompute it.
 }
 \description{

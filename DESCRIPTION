@@ -1,9 +1,8 @@
 Package: hyd1d
 Type: Package
-Title: Algorithms to Compute 1d Water Levels along the German Federal
-        Waterways Elbe and Rhine
-Version: 0.4.1
-Date: 2023-01-02
+Version: 0.4.2
+Date: 2023-02-21
+Title: 1d Water Level Interpolation along the Rivers Elbe and Rhine
 Authors@R: c(person("Arnd", "Weber", email = "arnd.weber@bafg.de",
                     role = c("aut", "cre"), 
                     comment = c(ORCID = "0000-0002-5973-2770")),
@@ -44,11 +43,11 @@ VignetteBuilder: knitr
 BugReports: https://github.com/bafg-bund/hyd1d/issues/
 URL: https://hyd1d.bafg.de, https://github.com/bafg-bund/hyd1d
 NeedsCompilation: no
-Packaged: 2023-01-06 06:23:17 UTC; WeberA
+Packaged: 2023-02-22 11:05:47 UTC; WeberA
 Author: Arnd Weber [aut, cre] (<https://orcid.org/0000-0002-5973-2770>),
   Marcus Hatz [aut],
   Wolfgang Stürmer [ctb],
   Wilfried Wiechmann [ctb]
 Maintainer: Arnd Weber <arnd.weber@bafg.de>
 Repository: CRAN
-Date/Publication: 2023-01-09 10:10:05 UTC
+Date/Publication: 2023-02-22 15:50:02 UTC

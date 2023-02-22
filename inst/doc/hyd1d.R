@@ -138,6 +138,9 @@ lrd <- function(x, y) {
     return(str)
 }
 
+## ----install_cran, eval = FALSE-----------------------------------------------
+#  install.packages("hyd1d")
+
 ## ----install_git, eval = FALSE------------------------------------------------
 #  install.packages("devtools")
 #  library(devtools)

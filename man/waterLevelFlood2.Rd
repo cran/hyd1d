@@ -2,7 +2,7 @@
 % Please edit documentation in R/waterLevelFlood2.R
 \name{waterLevelFlood2}
 \alias{waterLevelFlood2}
-\title{Compute 1D water level data through linear interpolation with 
+\title{Compute 1d water level data through linear interpolation with 
   neighboring gauging stations according to the INFORM 3-method Flood2
   (Flut2)}
 \usage{
@@ -15,7 +15,7 @@ waterLevelFlood2(wldf)
 An object of class \linkS4class{WaterLevelDataFrame}.
 }
 \description{
-This function computes a 1D water level according to the
+This function computes a 1d water level according to the
   \href{https://www.bafg.de/DE/08_Ref/U3/02_analyse/01_INFORM/inform.html}{INFORM}
   flood duration method Flood2 (Flut2) and stores it as column \code{w} of an
   S4 object of type \linkS4class{WaterLevelDataFrame}. Flood2 is designed to
@@ -31,7 +31,7 @@ This function computes a 1D water level according to the
 \details{
 This function computes a water level through simple linear
   interpolation of water levels at neighboring gauging stations. Historically
-  it has been designed for rivers without 1D reference water levels provided
+  it has been designed for rivers without 1d reference water levels provided
   by FLYS3 for \code{\link{df.flys}}.
 }
 \examples{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/waterLevelFlood1.R
 \name{waterLevelFlood1}
 \alias{waterLevelFlood1}
-\title{Compute 1D water level data from the FLYS3 water level MQ and a
+\title{Compute 1d water level data from the FLYS3 water level MQ and a
   gauging station according to the INFORM 3-method Flood1 (Flut1)}
 \usage{
 waterLevelFlood1(wldf, gauging_station, w, uuid, shiny = FALSE)
@@ -28,7 +28,7 @@ parameter. Otherwise \code{\link{getGaugingDataW}} or
 An object of class \linkS4class{WaterLevelDataFrame}.
 }
 \description{
-This function computes a 1D water level according to the
+This function computes a 1d water level according to the
   \href{https://www.bafg.de/DE/08_Ref/U3/02_analyse/01_INFORM/inform.html}{INFORM}
   flood duration method Flood1 (Flut1) and stores it as column \code{w} of an
   S4 object of type \linkS4class{WaterLevelDataFrame}. First the function

@@ -3,7 +3,7 @@
 \name{waterLevel}
 \alias{waterLevel}
 \alias{waterLevelPegelonline}
-\title{Compute a 1D water level dataset}
+\title{Compute a 1d water level dataset}
 \usage{
 waterLevel(wldf, shiny = FALSE)
 
@@ -21,11 +21,11 @@ waterLevelPegelonline(wldf, shiny = FALSE)
 An object of class \linkS4class{WaterLevelDataFrame}.
 }
 \description{
-Functions to compute 1D water level information and store it as
+Functions to compute 1d water level information and store it as
   column \code{w} of an S4 object of type \linkS4class{WaterLevelDataFrame}.
 }
 \details{
-\code{waterLevel} interpolates 1D water level along the river axis
+\code{waterLevel} interpolates 1d water level along the river axis
   of Elbe and Rhine based on daily averaged, mostly validated gauging data
   stored in the internal dataset \code{\link{df.gauging_data}}. Internally
   stored gauging data are available from 1960-01-01 until yesterday.

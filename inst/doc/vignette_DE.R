@@ -588,6 +588,9 @@ cat('<p style="text-align: center;">$WSL = WSL_{0.5MQ} + Gewicht * (WSL_{0.75MQ}
     box()
 }
 
+## ----install_cran, eval = FALSE-----------------------------------------------
+#  install.packages("hyd1d")
+
 ## ----install_git, eval = FALSE------------------------------------------------
 #  install.packages("devtools")
 #  library(devtools)
