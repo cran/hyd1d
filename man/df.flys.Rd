@@ -40,7 +40,7 @@ The \code{name}ing of the water levels is \code{river}-specific:
 
 \strong{Rhine:}
 
-''
+'Ud=1', 'Ud=5', 'GlQ2012', 'Ud=50', 'Ud=80', 'Ud=100', 'Ud=120', 'Ud=183', 'MQ', 'Ud=240', 'Ud=270', 'Ud=310', 'Ud=340', 'Ud=356', 'Ud=360', 'MHQ', 'HQ2', 'HQ5', 'HQ5-10', 'HQ10', 'HQ10-20', '~HQ20', 'HQ20-50', 'HQ50', 'HQ50-100', 'HQ100', 'HQ100-200', 'HQ200', 'HQ200-ex', 'HQextr.'
 
 Both lists of water levels are ordered from low to high water levels.
 }
