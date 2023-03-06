@@ -5,7 +5,7 @@
 \alias{df.gauging_data}
 \title{Gauging data for all WSV-run gauging stations along Elbe and Rhine}
 \format{
-A \code{data.frame} with 1328837 (rows and 3 variables):
+A \code{data.frame} with 1379334 (rows and 3 variables):
 \describe{
 \item{gauging_station}{name of the gauging station (type \code{character}).  It is used as JOIN field for dataset \code{\link{df.gauging_station_data}}.}
 \item{date}{of the measurement (type \code{Date}).}
@@ -20,7 +20,7 @@ This dataset contains all \strong{daily-averaged} gauging data
   for the gauging stations along \strong{Elbe} and \strong{Rhine} operated by
   the waterway and shipping administration (Wasserstraßen- und
   Schifffahrtsverwaltung (WSV)) since 1960-01-01. Data from
-  1960-01-01 until 2021-12-31 are validated and were queried from the
+  1960-01-01 until 2022-12-31 are validated and were queried from the
   BfG-Wiski
   (\href{http://www.bafg.de/DE/08_Ref/M1/03_Pegelwesen/HYDABA/hydaba_node.html}{HyDaBa})
   and supplied by \email{Datenstelle-M1@bafg.de}. Data after 2021-12-31 are
