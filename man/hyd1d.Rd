@@ -3,6 +3,7 @@
 \docType{package}
 \name{hyd1d}
 \alias{hyd1d}
+\alias{hyd1d-package}
 \title{hyd1d - 1d Water Level Interpolation along the Rivers Elbe and Rhine}
 \description{
 The hyd1d package provides an S4 class, relevant datasets and
