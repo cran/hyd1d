@@ -48,20 +48,15 @@ This functions queries online water level data through the
   older and validated data, feel free to contact the data service at the
   Federal Institute of Hydrology by email (\email{Datenstelle-M1@bafg.de}).
 }
-\note{
-Internally \code{\link[utils:download.file]{download.file}} is used to
-  obtain the gauging data from \url{https://pegelonline.wsv.de/gast/start}.
-  The download method can be set through the option "\code{download.file.method}":
-  see \code{\link[base:options]{options()}}.
-}
 \examples{
-getPegelonlineW(gauging_station = "DESSAU", time = Sys.time() - 3600)
-getPegelonlineW(gauging_station = "DESSAU", time = Sys.Date() - 1)
-
+\dontshow{if (hyd1d:::.pegelonline_status()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+   getPegelonlineW(gauging_station = "DESSAU", time = Sys.time() - 3600)
+   getPegelonlineW(gauging_station = "DESSAU", time = Sys.Date() - 1)
+\dontshow{\}) # examplesIf}
 }
 \references{
 \insertRef{wsv_pegelonline_2018}{hyd1d}
 }
 \seealso{
-\code{\link[utils:download.file]{download.file}}, \code{\link{waterLevelPegelonline}}
+\code{\link{waterLevelPegelonline}}
 }

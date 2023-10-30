@@ -43,6 +43,7 @@ Functions to compute 1d water level information and store it as
   appropriate values within the last 31 days before function call.
 }
 \examples{
+\dontshow{if (hyd1d:::.pegelonline_status()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 # waterLevel
 wldf <- WaterLevelDataFrame(river   = "Elbe",
                             time    = as.POSIXct("2016-12-21"),
@@ -53,7 +54,7 @@ wldf <- waterLevel(wldf)
 wldf1 <- wldf
 setTime(wldf1) <- Sys.time() - as.difftime(60, units = "mins")
 wldf1 <- waterLevelPegelonline(wldf1)
-
+\dontshow{\}) # examplesIf}
 }
 \references{
 \insertRef{busch_einheitliche_2009}{hyd1d}

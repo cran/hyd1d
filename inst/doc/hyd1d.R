@@ -185,7 +185,7 @@ xlim_max <- 263
            cex = 0.7, bty = "n")
 }
 
-## ----figure2, fig.show = 'asis', fig.cap = capFig(paste0("Interpolated water level, computation-relevant stationary [FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html) water levels (**0.5MQ**, **a** and **0.75MQ**) and gauge height as of ", strftime(Sys.time() - 3600, format = "%Y-%m-%d %H:%M")," at River Elbe between Rosslau and Dessau.")), eval = TRUE----
+## ----figure2, fig.show = 'asis', fig.cap = capFig(paste0("Interpolated water level, computation-relevant stationary [FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html) water levels (**0.5MQ**, **a** and **0.75MQ**) and gauge height as of ", strftime(Sys.time() - 3600, format = "%Y-%m-%d %H:%M")," at River Elbe between Rosslau and Dessau.")), eval = hyd1d:::.pegelonline_status()----
 # one hour ago
 time <- as.POSIXct(Sys.time() - 3600)
 
