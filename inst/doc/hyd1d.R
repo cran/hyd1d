@@ -10,7 +10,6 @@ knitr::opts_chunk$set(
 
 ## ----captions, echo = FALSE, error = FALSE, warning = FALSE, message = FALSE, include = FALSE----
 library(hyd1d)
-library(plotrix)
 library(stringr)
 library(yaml)
 library(desc)
@@ -217,7 +216,7 @@ summary(wldf)
 }
 
 
-## ----figure3, fig.show = 'asis', fig.cap = capFig("Water levels computed according to the Flood1-method with the reference gauges Rosslau (wldf1) and Dessau (wldf2) and the Flood2-method as of 2016-12-21 at River Elbe between Rosslau and Dessau."), eval = TRUE----
+## ----figure3-prep-------------------------------------------------------------
 wldf <- WaterLevelDataFrame(river   = "Elbe",
                             time    = as.POSIXct("2016-12-21"),
                             station = seq(257, 262, 0.1))
@@ -231,6 +230,7 @@ summary(wldf2)
 wldf3 <- waterLevelFlood2(wldf)
 summary(wldf3)
 
+## ----figure3, fig.show = 'asis', fig.cap = capFig("Water levels computed according to the Flood1-method with the reference gauges Rosslau (wldf1) and Dessau (wldf2) and the Flood2-method as of 2016-12-21 at River Elbe between Rosslau and Dessau."), eval = TRUE, echo = FALSE----
 df.gs2 <- getGaugingStations(wldf2)
 
 {
@@ -241,8 +241,9 @@ df.gs2 <- getGaugingStations(wldf2)
     lines(wldf3$station, wldf3$w, col = "red", lty = 2)
     abline(v = df.gs2$km_qps, lty = 3, lwd = 0.5)
     points(df.gs2$km_qps, df.gs2$wl, pch=21, col="darkblue", bg="darkblue")
-    boxed.labels(df.gs2$km_qps, 55.4, df.gs2$gauging_station, bg="white", 
-                 srt = 90, border = FALSE, xpad = 4, ypad = 0.7, cex = 0.7)
+    hyd1d:::.boxed.labels(df.gs2$km_qps, 55.4, df.gs2$gauging_station,
+                          bg="white", srt = 90, border = FALSE, xpad = 4,
+                          ypad = 0.7, cex = 0.7)
     legend("topright", 
            col = c("darkblue", "darkblue", "darkblue", "red"), 
            pch = c(21, NA, NA, NA), 
@@ -254,18 +255,20 @@ df.gs2 <- getGaugingStations(wldf2)
            cex = 0.7, bty = "n")
 }
 
-## ----figure4, fig.show = 'asis', fig.cap = capFig("Water levels according to [FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html) with the reference gauge Rosslau as of 2016-12-21 at River Elbe between Rosslau and Dessau."), eval = TRUE----
+## ----figure4-prep-------------------------------------------------------------
 wldf <- waterLevelFlys3InterpolateY(wldf, "ROSSLAU", shiny = TRUE)
 summary(wldf)
 
+## ----figure4, fig.show = 'asis', fig.cap = capFig("Water levels according to [FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html) with the reference gauge Rosslau as of 2016-12-21 at River Elbe between Rosslau and Dessau."), eval = TRUE, echo = FALSE----
 {
     plotShiny(wldf, TRUE, TRUE, TRUE, xlim = c(xlim_min, xlim_max),
               xlab = "river station (km)",
               ylab = "elevation (m a.s.l. (DHHN92))")
     abline(v = df.gs2$km_qps, lty = 3, lwd = 0.5)
     points(df.gs2$km_qps, df.gs2$wl, pch=21, col="darkblue", bg="darkblue")
-    boxed.labels(df.gs2$km_qps, 55.4, df.gs2$gauging_station, bg="white", 
-                 srt = 90, border = FALSE, xpad = 4, ypad = 0.7, cex = 0.7)
+    hyd1d:::.boxed.labels(df.gs2$km_qps, 55.4, df.gs2$gauging_station,
+                          bg="white", srt = 90, border = FALSE, xpad = 4,
+                          ypad = 0.7, cex = 0.7)
     legend("topright", 
            col = c("darkblue", "darkblue", "darkblue", "red", "black"), 
            pch = c(21, NA, NA, NA, NA), 
