@@ -20,10 +20,9 @@ This dataset contains all \strong{daily-averaged} gauging data
   for the gauging stations along \strong{Elbe} and \strong{Rhine} operated by
   the waterway and shipping administration (Wasserstraßen- und
   Schifffahrtsverwaltung (WSV)) since 1960-01-01. Data from
-  1960-01-01 until 2022-12-31 are validated and were queried from the
-  BfG-Wiski
-  (\href{http://www.bafg.de/DE/08_Ref/M1/03_Pegelwesen/HYDABA/hydaba_node.html}{HyDaBa})
-  and supplied by \email{Datenstelle-M1@bafg.de}. Data after 2021-12-31 are
+  1960-01-01 until 2023-12-31 are validated and were queried from
+  (\href{https://www.bafg.de/DE/3_Beraet/2_Exp_quantitaet/Hydrologie_M1/hydrologie_node.html#vt-sprg-3}{WISKI7})-database
+  and supplied by \email{Datenstelle-M1@bafg.de}. Data after 2023-12-31 are
   continuously collected from \url{https://pegelonline.wsv.de/gast/start} and
   are not officially validated. Unvalidated recent data will be replaced
   anually and distributed through package and/or internal dataset updates.

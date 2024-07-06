@@ -161,7 +161,7 @@ summary(wldf)
 wldf <- waterLevel(wldf)
 summary(wldf)
 
-## ----figure1, fig.show = 'asis', fig.cap = capFig("Interpolated water level, computation-relevant stationary [FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html) water levels (**0.5MQ**, **a** and **0.75MQ**) and gauge height as of 2016-12-21 at River Elbe between Rosslau and Dessau."), eval = TRUE----
+## ----figure1, fig.show = 'asis', fig.cap = capFig("Interpolated water level, computation-relevant stationary [FLYS3](https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html) water levels (**0.5MQ**, **a** and **0.75MQ**) and gauge height as of 2016-12-21 at River Elbe between Rosslau and Dessau."), eval = TRUE----
 wldf <- waterLevel(wldf, shiny = TRUE)
 summary(wldf)
 
@@ -184,7 +184,7 @@ xlim_max <- 263
            cex = 0.7, bty = "n")
 }
 
-## ----figure2, fig.show = 'asis', fig.cap = capFig(paste0("Interpolated water level, computation-relevant stationary [FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html) water levels (**0.5MQ**, **a** and **0.75MQ**) and gauge height as of ", strftime(Sys.time() - 3600, format = "%Y-%m-%d %H:%M")," at River Elbe between Rosslau and Dessau.")), eval = hyd1d:::.pegelonline_status()----
+## ----figure2, fig.show = 'asis', fig.cap = capFig(paste0("Interpolated water level, computation-relevant stationary [FLYS3](https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html) water levels (**0.5MQ**, **a** and **0.75MQ**) and gauge height as of ", strftime(Sys.time() - 3600, format = "%Y-%m-%d %H:%M")," at River Elbe between Rosslau and Dessau.")), eval = hyd1d:::.pegelonline_status()----
 # one hour ago
 time <- as.POSIXct(Sys.time() - 3600)
 
@@ -259,7 +259,7 @@ df.gs2 <- getGaugingStations(wldf2)
 wldf <- waterLevelFlys3InterpolateY(wldf, "ROSSLAU", shiny = TRUE)
 summary(wldf)
 
-## ----figure4, fig.show = 'asis', fig.cap = capFig("Water levels according to [FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html) with the reference gauge Rosslau as of 2016-12-21 at River Elbe between Rosslau and Dessau."), eval = TRUE, echo = FALSE----
+## ----figure4, fig.show = 'asis', fig.cap = capFig("Water levels according to [FLYS3](https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html) with the reference gauge Rosslau as of 2016-12-21 at River Elbe between Rosslau and Dessau."), eval = TRUE, echo = FALSE----
 {
     plotShiny(wldf, TRUE, TRUE, TRUE, xlim = c(xlim_min, xlim_max),
               xlab = "river station (km)",
@@ -285,13 +285,13 @@ summary(wldf)
 ## ----link_waterlevel, eval = is_html, echo = FALSE, results = 'asis'----------
 cat('<p style="text-align: center;"><a href="https://shiny.bafg.de/waterlevel/" target="_blank">https://shiny.bafg.de/waterlevel/</a></p>')
 
-## ----figure20, echo = FALSE, fig.cap = capFig(paste0("Screenshot of the ", href("waterLevel-ShinyApp", "https://shiny.bafg.de/waterlevel/"), " with the interpolated water level, caomputationrevelvant stationary ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-waterlevels (", bf("0.5MQ"), ", ", bf("a"), " and ", bf("0.75MQ"), ") and gauge heights at 2016-12-21 at the River Elbe between Rosslau and Dessau, Germany.")), fig.show = 'asis', out.width = "100%", results = 'asis'----
+## ----figure20, echo = FALSE, fig.cap = capFig(paste0("Screenshot of the ", href("waterLevel-ShinyApp", "https://shiny.bafg.de/waterlevel/"), " with the interpolated water level, caomputationrevelvant stationary ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-waterlevels (", bf("0.5MQ"), ", ", bf("a"), " and ", bf("0.75MQ"), ") and gauge heights at 2016-12-21 at the River Elbe between Rosslau and Dessau, Germany.")), fig.show = 'asis', out.width = "100%", results = 'asis'----
 knitr::include_graphics('screenshot_waterLevel.png')
 
 ## ----link_waterlevelpegelonline, eval = is_html, echo = FALSE, results = 'asis'----
 cat('<p style="text-align: center;"><a href="https://shiny.bafg.de/waterlevelpegelonline/" target="_blank">https://shiny.bafg.de/waterlevelpegelonline/</a></p>')
 
-## ----figure21, echo = FALSE, fig.cap = capFig(paste0("Screenshot of the ", href("waterLevelPegelonline-ShinyApp", "https://shiny.bafg.de/waterlevelpegelonline/"), " with the interpolated water level, computationrevelvant stationary ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-waterlevels (", bf("a"), ", ", bf("0.75MQ"), " and ", bf("0.5MQ"), ") and gauge heights at 2018-04-13 11:00 a.m. at the River Elbe between Rosslau and Dessau, Germany.")), fig.show = 'asis', out.width = "100%"----
+## ----figure21, echo = FALSE, fig.cap = capFig(paste0("Screenshot of the ", href("waterLevelPegelonline-ShinyApp", "https://shiny.bafg.de/waterlevelpegelonline/"), " with the interpolated water level, computationrevelvant stationary ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-waterlevels (", bf("a"), ", ", bf("0.75MQ"), " and ", bf("0.5MQ"), ") and gauge heights at 2018-04-13 11:00 a.m. at the River Elbe between Rosslau and Dessau, Germany.")), fig.show = 'asis', out.width = "100%"----
 knitr::include_graphics('screenshot_waterLevelPegelonline.png')
 
 ## ----link_hydflood, eval = is_html, echo = FALSE, results = 'asis'------------

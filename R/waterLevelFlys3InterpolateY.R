@@ -5,17 +5,17 @@
 #' 
 #' @description Function to compute 1d water level information based on the
 #'   original
-#'   \href{https://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html}{FLYS3}
+#'   \href{https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html}{FLYS3}
 #'   algorythms and store it as column \code{w} of an S4 object of type
 #'   \linkS4class{WaterLevelDataFrame}.
 #' 
 #' @param wldf an object of class \linkS4class{WaterLevelDataFrame}.
-#' @eval param_gauging_station()
+#' @eval param_gauging_station_inland()
 #' @param w If the \code{wldf} does not supply a valid non-\code{NA} time slot,
 #'   it is possible to execute the function with the help of this optional 
 #'   parameter. Otherwise \code{\link{getGaugingDataW}} or 
 #'   \code{\link{getPegelonlineW}} provide gauging data internally.
-#' @eval param_uuid()
+#' @eval param_uuid_inland()
 #' @param shiny \code{logical} determing whether columns (\code{section},
 #'   \code{weight_x}, \code{weight_y}) relevant for the
 #'   \code{\link{plotShiny}()}-function are appended to the resulting

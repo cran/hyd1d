@@ -29,7 +29,7 @@ An object of class \linkS4class{WaterLevelDataFrame}.
 }
 \description{
 This function computes a 1d water level according to the
-  \href{https://www.bafg.de/DE/08_Ref/U3/02_analyse/01_INFORM/inform.html}{INFORM}
+  \href{https://www.bafg.de/DE/3_Beraet/4_Exp_oekologie/Flussauenmodell_INFORM_U3/flussauenmodell_inform_node.html}{INFORM}
   flood duration method Flood1 (Flut1) and stores it as column \code{w} of an
   S4 object of type \linkS4class{WaterLevelDataFrame}. First the function
   obtains the reference water level MQ from \code{\link{df.flys}}. This

@@ -39,3 +39,28 @@ functions use the datasets \code{\link{df.flys}} and
 to linearily interpolate continuous water levels intersecting with the
 measured water level data at the gauging stations.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://hyd1d.bafg.de}
+  \item \url{https://github.com/bafg-bund/hyd1d}
+  \item Report bugs at \url{https://github.com/bafg-bund/hyd1d/issues/}
+}
+
+}
+\author{
+\strong{Maintainer}: Arnd Weber \email{arnd.weber@bafg.de} (\href{https://orcid.org/0000-0002-5973-2770}{ORCID})
+
+Authors:
+\itemize{
+  \item Marcus Hatz \email{hatz@bafg.de}
+}
+
+Other contributors:
+\itemize{
+  \item Wolfgang Stürmer [contributor]
+  \item Wilfried Wiechmann \email{wiechmann@bafg.de} [contributor]
+  \item Benjamin Eberhardt \email{eberhardt@bafg.de} [contributor]
+}
+
+}

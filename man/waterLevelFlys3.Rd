@@ -13,7 +13,7 @@ waterLevelFlys3Seq(river = c("Elbe", "Rhine"), name, from, to)
 \item{wldf}{an object of class \linkS4class{WaterLevelDataFrame}.}
 
 \item{name}{a string with the name of a stationary 
-\href{https://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html}{FLYS3}
+\href{https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html}{FLYS3}
 water level. It has 
 to be type \code{character}, has to have a length of
 one and has to be an element of the \code{river}-specific names specified 
@@ -37,7 +37,7 @@ An object of class \linkS4class{WaterLevelDataFrame}.
 }
 \description{
 Obtain 1d water level data from the
-  \href{https://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html}{FLYS3}
+  \href{https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html}{FLYS3}
   database using either 
   a predefined \linkS4class{WaterLevelDataFrame} or \code{river}, \code{from} 
   and \code{to} arguments that enable the internal construction of a 
@@ -46,7 +46,7 @@ Obtain 1d water level data from the
   between the given range of \code{from} and \code{to}.
 }
 \details{
-Possible \code{name}s of \href{https://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html}{FLYS3} water levels and ranges of \code{from} and \code{to} are river-specific:
+Possible \code{name}s of \href{https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html}{FLYS3} water levels and ranges of \code{from} and \code{to} are river-specific:
 
 \strong{Elbe:}
 

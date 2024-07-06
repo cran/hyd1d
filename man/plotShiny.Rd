@@ -16,11 +16,11 @@ plotShiny(
 \item{wldf}{an object of class \linkS4class{WaterLevelDataFrame}.}
 
 \item{add_flys}{\code{logical} determining whether the used 
-\href{http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html}{FLYS3}
+\href{https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html}{FLYS3}
 water levels should be plotted.}
 
 \item{add_flys_labels}{\code{logical} determining whether the used 
-\href{http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html}{FLYS3}
+\href{https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html}{FLYS3}
 water levels should be labelled.}
 
 \item{add_weighting}{\code{logical} determining whether the weighting of

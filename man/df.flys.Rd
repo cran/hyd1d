@@ -19,7 +19,7 @@ df.flys
 \description{
 This dataset contains the 30 stationary 1d water levels for the
   rivers \strong{Elbe} and \strong{Rhine} originally stored in the 
-  \href{https://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html}{FLYS3}-database.
+  \href{https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html}{FLYS3}-database.
   
   For both rivers 30 stationary water levels have been computed by means of 
   the 1d hydraulic model \href{https://download.deltares.nl/en/sobek/}{SOBEK}.

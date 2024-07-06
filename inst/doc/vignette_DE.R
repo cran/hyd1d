@@ -181,9 +181,9 @@ id <- gs$km_qps >= xlim_min & gs$km_qps <= xlim_max
 }
 
 ## ----link-flys, eval = is_html, echo = FALSE, results = 'asis'----------------
-cat('<p style="text-align: center;"><a href="https://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html" target="_blank">FLYS3 – Flusshydrologischer Webdienst</a></p>')
+cat('<p style="text-align: center;"><a href="https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html" target="_blank">FLYS3 – Flusshydrologischer Webdienst</a></p>')
 
-## ----figure02, fig.show = 'asis', fig.cap = capFig("[FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html)-Wasserspiegellagen an der Elbe bei Rosslau und Dessau."), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
+## ----figure02, fig.show = 'asis', fig.cap = capFig("[FLYS3](https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html)-Wasserspiegellagen an der Elbe bei Rosslau und Dessau."), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
 flys3_water_levels <- c("0.5MNQ", "MNQ", "0.5MQ", "a", "0.75MQ", "b", "MQ", "c",
                         "2MQ", "3MQ", "d", "e", "MHQ", "HQ2", "f", "HQ5", "g", 
                         "h", "HQ10", "HQ15", "HQ20", "HQ25", "HQ50", "HQ75", 
@@ -213,7 +213,7 @@ flys3_water_levels <- c("0.5MNQ", "MNQ", "0.5MQ", "a", "0.75MQ", "b", "MQ", "c",
                           col = "blue")
 }
 
-## ----figure03, fig.show = 'asis', fig.cap = capFig(paste0("Ausgewählte stationäre ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), ", ", bf("a"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
+## ----figure03, fig.show = 'asis', fig.cap = capFig(paste0("Ausgewählte stationäre ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), ", ", bf("a"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
 mq_0.5 <- waterLevelFlys3(wldf, "0.5MQ")
 a <- waterLevelFlys3(wldf, "a")
 mq_0.75 <- waterLevelFlys3(wldf, "0.75MQ")
@@ -252,7 +252,7 @@ mq <- waterLevelFlys3(wldf, "MQ")
            legend = "Wasserstand", cex = 0.7, bty = "n")
 }
 
-## ----figure04, fig.show = 'asis', fig.cap = capFig("[FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html)-Wasserspiegellage an der Elbe bei Rosslau und Dessau bei einem Wasserstand von 174 cm am Pegel Wittenberg (Tagesmittelwert des 21.12.2016)."), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
+## ----figure04, fig.show = 'asis', fig.cap = capFig("[FLYS3](https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html)-Wasserspiegellage an der Elbe bei Rosslau und Dessau bei einem Wasserstand von 174 cm am Pegel Wittenberg (Tagesmittelwert des 21.12.2016)."), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
 wldf2 <- waterLevelFlys3InterpolateY(wldf, "WITTENBERG", shiny = TRUE)
 wldf3 <- waterLevelFlys3InterpolateY(wldf, "ROSSLAU", shiny = TRUE)
 wldf4 <- waterLevelFlys3InterpolateY(wldf, "DESSAU", shiny = TRUE)
@@ -285,7 +285,7 @@ wldf4 <- waterLevelFlys3InterpolateY(wldf, "DESSAU", shiny = TRUE)
     #text(262, min(wldf4$w), "DESSAU", pos = 4, cex = 0.6)
 }
 
-## ----figure05, fig.show = 'asis', fig.cap = capFig("[FLYS3](http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html)-Wasserspiegellagen an der Elbe bei Rosslau und Dessau berechnet mittels der Bezugspegel Wittenberg, Rosslau und Dessau."), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
+## ----figure05, fig.show = 'asis', fig.cap = capFig("[FLYS3](https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html)-Wasserspiegellagen an der Elbe bei Rosslau und Dessau berechnet mittels der Bezugspegel Wittenberg, Rosslau und Dessau."), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
 {
     plotShiny(wldf2, FALSE, FALSE, FALSE, xlim = c(xlim_min, xlim_max),
               ylim = c(ylim_min, ylim_max))
@@ -400,7 +400,7 @@ cat('<p style="text-align: center;"><a href="https://www.pegelonline.wsv.de/webs
     box()
 }
 
-## ----figure09, fig.show = 'asis', fig.cap = capFig(paste0("Ausgewählte stationäre ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
+## ----figure09, fig.show = 'asis', fig.cap = capFig(paste0("Ausgewählte stationäre ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
 {
     plot(1, 1, type = "n", xlim = c(xlim_min, xlim_max), 
          ylim = c(ylim_min, ylim_max), xlab = "Flusskilometer (km)", 
@@ -440,7 +440,7 @@ cat('<p style="text-align: center;"><a href="https://www.pegelonline.wsv.de/webs
            legend = "Wasserstand", cex = 0.7, bty = "n")
 }
 
-## ----figure10, fig.show = 'asis', fig.cap = capFig(paste0("Ausgewählte stationäre ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau und deren relative Lage zwischen den ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
+## ----figure10, fig.show = 'asis', fig.cap = capFig(paste0("Ausgewählte stationäre ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau und deren relative Lage zwischen den ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
 {
     plot(1, 1, type = "n", xlim = c(xlim_min, xlim_max), 
          ylim = c(ylim_min, ylim_max), xlab = "Flusskilometer (km)", 
@@ -489,7 +489,7 @@ cat('<p style="text-align: center;"><a href="https://www.pegelonline.wsv.de/webs
            cex = 0.7, bty = "n")
 }
 
-## ----figure11, fig.show = 'asis', fig.cap = capFig(paste0("Relatives Gewicht für die Interpolation der Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau zwischen den ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen ", bf("0.5MQ"), " und ", bf("0.75MQ"), ".")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
+## ----figure11, fig.show = 'asis', fig.cap = capFig(paste0("Relatives Gewicht für die Interpolation der Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau zwischen den ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen ", bf("0.5MQ"), " und ", bf("0.75MQ"), ".")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
 {
     plot(1, 1, type = "n", xlim = c(xlim_min, xlim_max), 
          ylim = c(-0.1, 1.1), xlab = "Flusskilometer (km)", 
@@ -522,7 +522,7 @@ cat('<p style="text-align: center;"><a href="https://www.pegelonline.wsv.de/webs
 ## ----formula-html, eval = is_html, echo = FALSE, results = 'asis'-------------
 cat('<p style="text-align: center;">$WSL = WSL_{0.5MQ} + Gewicht * (WSL_{0.75MQ} - WSL_{0.5MQ})$</p>')
 
-## ----figure12, fig.show = 'asis', fig.cap = capFig(paste0("Interpolierte Wasserspiegellage, ausgewählte stationäre ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
+## ----figure12, fig.show = 'asis', fig.cap = capFig(paste0("Interpolierte Wasserspiegellage, ausgewählte stationäre ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
 {
     plot(1, 1, type = "n", xlim = c(xlim_min, xlim_max), 
          ylim = c(ylim_min, ylim_max), xlab = "Flusskilometer (km)", 
@@ -571,7 +571,7 @@ cat('<p style="text-align: center;">$WSL = WSL_{0.5MQ} + Gewicht * (WSL_{0.75MQ}
            cex = 0.7, bty = "n")
 }
 
-## ----figure13, fig.show = 'asis', fig.cap = capFig(paste0("Interpolierte Wasserspiegellage, berechnungsrelevante stationäre ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), ", ", bf("a"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
+## ----figure13, fig.show = 'asis', fig.cap = capFig(paste0("Interpolierte Wasserspiegellage, berechnungsrelevante stationäre ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), ", ", bf("a"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), echo = FALSE, error = FALSE, warning = FALSE, message = FALSE----
 {
     plotShiny(wldf1, TRUE, TRUE, TRUE, xlim = c(xlim_min, xlim_max),
               ylim = c(ylim_min, ylim_max))
@@ -621,7 +621,7 @@ summary(wldf)
 wldf <- waterLevel(wldf)
 summary(wldf)
 
-## ----figure14, fig.show = 'asis', fig.cap = capFig(paste0("Interpolierte Wasserspiegellage, berechnungsrelevante stationäre ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), ", ", bf("a"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), eval = TRUE----
+## ----figure14, fig.show = 'asis', fig.cap = capFig(paste0("Interpolierte Wasserspiegellage, berechnungsrelevante stationäre ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), ", ", bf("a"), " und ", bf("0.75MQ"), ") und Wasserstände vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), eval = TRUE----
 wldf <- waterLevel(wldf, shiny = TRUE)
 summary(wldf)
 
@@ -640,7 +640,7 @@ legend("topright",
        text.col = c(1, "darkblue", 1, 1, 1),
        cex = 0.7, bty = "n")
 
-## ----figure15, fig.show = 'asis', fig.cap = capFig(paste0("Interpolierte Wasserspiegellage, berechnungsrelevante stationäre ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen und Wasserstände vom ", strftime(Sys.time() - 3600, format = "%d.%m.%Y %H:%M")," Uhr an der Elbe bei Rosslau und Dessau.")), eval = hyd1d:::.pegelonline_status()----
+## ----figure15, fig.show = 'asis', fig.cap = capFig(paste0("Interpolierte Wasserspiegellage, berechnungsrelevante stationäre ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen und Wasserstände vom ", strftime(Sys.time() - 3600, format = "%d.%m.%Y %H:%M")," Uhr an der Elbe bei Rosslau und Dessau.")), eval = hyd1d:::.pegelonline_status()----
 # one hour ago
 time <- as.POSIXct(Sys.time() - 3600)
 
@@ -708,7 +708,7 @@ df.gs2 <- getGaugingStations(wldf2)
 wldf <- waterLevelFlys3InterpolateY(wldf, "ROSSLAU", shiny = TRUE)
 summary(wldf)
 
-## ----figure17, fig.show = 'asis', fig.cap = capFig(paste0("Wasserspiegellage nach ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), " mit dem Bezugspegel Rosslau für den 21.12.2016 an der Elbe bei Rosslau und Dessau.")), eval = TRUE, echo = FALSE----
+## ----figure17, fig.show = 'asis', fig.cap = capFig(paste0("Wasserspiegellage nach ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), " mit dem Bezugspegel Rosslau für den 21.12.2016 an der Elbe bei Rosslau und Dessau.")), eval = TRUE, echo = FALSE----
 {
     plotShiny(wldf, TRUE, TRUE, TRUE, xlim = c(xlim_min, xlim_max))
     abline(v = df.gs2$km_qps, lty = 3, lwd = 0.5)
@@ -732,13 +732,13 @@ summary(wldf)
 ## ----link-waterlevel, eval = is_html, echo = FALSE, results = 'asis'----------
 cat('<p style="text-align: center;"><a href="https://shiny.bafg.de/waterlevel/" target="_blank">https://shiny.bafg.de/waterlevel/</a></p>')
 
-## ----figure20, echo = FALSE, fig.cap = capFig(paste0("Screenshot der ", href("waterLevel-ShinyApp", "https://shiny.bafg.de/waterlevel/"), " mit der interpolierten Wasserspiegellage, berechnungsrelevanten stationären ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), ", ", bf("a"), " und ", bf("0.75MQ"), ") und Wasserständen vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), fig.show = 'asis', out.width = "100%", results = 'asis'----
+## ----figure20, echo = FALSE, fig.cap = capFig(paste0("Screenshot der ", href("waterLevel-ShinyApp", "https://shiny.bafg.de/waterlevel/"), " mit der interpolierten Wasserspiegellage, berechnungsrelevanten stationären ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("0.5MQ"), ", ", bf("a"), " und ", bf("0.75MQ"), ") und Wasserständen vom 21.12.2016 an der Elbe bei Rosslau und Dessau.")), fig.show = 'asis', out.width = "100%", results = 'asis'----
 knitr::include_graphics('screenshot_waterLevel.png')
 
 ## ----link-waterlevelpegelonline, eval = is_html, echo = FALSE, results = 'asis'----
 cat('<p style="text-align: center;"><a href="https://shiny.bafg.de/waterlevelpegelonline/" target="_blank">https://shiny.bafg.de/waterlevelpegelonline/</a></p>')
 
-## ----figure21, echo = FALSE, fig.cap = capFig(paste0("Screenshot der ", href("waterLevelPegelonline-ShinyApp", "https://shiny.bafg.de/waterlevelpegelonline/"), " mit der interpolierten Wasserspiegellage und den berechnungsrelevanten stationären ", href("FLYS3", "http://www.bafg.de/DE/08_Ref/M2/03_Fliessgewmod/01_FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("a"), ", ", bf("0.75MQ"), " and ", bf("0.5MQ"), ") und Wasserständen vom 13.04.2018 11:00 Uhr an der Elbe bei Rosslau und Dessau.")), fig.show = 'asis', out.width = "100%"----
+## ----figure21, echo = FALSE, fig.cap = capFig(paste0("Screenshot der ", href("waterLevelPegelonline-ShinyApp", "https://shiny.bafg.de/waterlevelpegelonline/"), " mit der interpolierten Wasserspiegellage und den berechnungsrelevanten stationären ", href("FLYS3", "https://www.bafg.de/DE/5_Informiert/1_Portale_Dienste/FLYS/flys_node.html"), "-Wasserspiegellagen (", bf("a"), ", ", bf("0.75MQ"), " and ", bf("0.5MQ"), ") und Wasserständen vom 13.04.2018 11:00 Uhr an der Elbe bei Rosslau und Dessau.")), fig.show = 'asis', out.width = "100%"----
 knitr::include_graphics('screenshot_waterLevelPegelonline.png')
 
 ## ----link-hydflood, eval = is_html, echo = FALSE, results = 'asis'------------

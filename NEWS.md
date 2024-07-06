@@ -1,3 +1,10 @@
+# hyd1d 0.5.2
+
+* move file downloads from `utils::download.file` to `httr2`
+* fix broken urls
+* import validated gauging data for 2023.
+* internal cleanup of waterLevel(), waterLevelFlood1(), waterLevelPegelonline()
+
 # hyd1d 0.5.1
 
 * adapt BfG's new corporate design
