@@ -138,12 +138,12 @@ lrd <- function(x, y) {
 }
 
 ## ----install_cran, eval = FALSE-----------------------------------------------
-#  install.packages("hyd1d")
+# install.packages("hyd1d")
 
 ## ----install_git, eval = FALSE------------------------------------------------
-#  install.packages("devtools")
-#  library(devtools)
-#  devtools::install_github("bafg-bund/hyd1d")
+# install.packages("devtools")
+# library(devtools)
+# devtools::install_github("bafg-bund/hyd1d")
 
 ## ----library, eval = TRUE, echo = TRUE, error = FALSE, warning = FALSE, message = FALSE----
 library(hyd1d)

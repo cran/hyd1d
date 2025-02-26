@@ -513,11 +513,11 @@ cat('<p style="text-align: center;"><a href="https://www.pegelonline.wsv.de/webs
 }
 
 ## ----formula-latex, eval = !is_html, echo = FALSE, results = 'asis'-----------
-#  cat('
-#  \\begin{center}
-#  $WSL = WSL_{0.5MQ} + Gewicht * (WSL_{0.75MQ} - WSL_{0.5MQ})$
-#  \\end{center}
-#  ')
+# cat('
+# \\begin{center}
+# $WSL = WSL_{0.5MQ} + Gewicht * (WSL_{0.75MQ} - WSL_{0.5MQ})$
+# \\end{center}
+# ')
 
 ## ----formula-html, eval = is_html, echo = FALSE, results = 'asis'-------------
 cat('<p style="text-align: center;">$WSL = WSL_{0.5MQ} + Gewicht * (WSL_{0.75MQ} - WSL_{0.5MQ})$</p>')
@@ -597,15 +597,15 @@ cat('<p style="text-align: center;">$WSL = WSL_{0.5MQ} + Gewicht * (WSL_{0.75MQ}
 }
 
 ## ----install-cran, eval = FALSE-----------------------------------------------
-#  install.packages("hyd1d")
+# install.packages("hyd1d")
 
 ## ----install-git, eval = FALSE------------------------------------------------
-#  install.packages("devtools")
-#  library(devtools)
-#  devtools::install_github("bafg-bund/hyd1d")
+# install.packages("devtools")
+# library(devtools)
+# devtools::install_github("bafg-bund/hyd1d")
 
 ## ----library, eval = FALSE----------------------------------------------------
-#  library(hyd1d)
+# library(hyd1d)
 
 ## ----wldf, eval = TRUE--------------------------------------------------------
 wldf <- WaterLevelDataFrame(river   = "Elbe",
